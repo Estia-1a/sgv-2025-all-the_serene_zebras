@@ -1,0 +1,11 @@
+#top-right {
+    position: fixed;   /* reste collé à l’écran */
+    top: 20px;         /* distance du haut */
+    right: 500px;       /* distance du bord droit */
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
