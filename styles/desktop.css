@@ -1,11 +1,37 @@
 #top-right {
-    position: fixed;   /* reste collé à l’écran */
-    top: 20px;         /* distance du haut */
-    right: 500px;       /* distance du bord droit */
-    padding: 10px 15px;
-    background-color: #3498db;
+    padding: 8px 16px;
+    background-color: #76B442;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+main, h1, p {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.site-header {
+    background-color: #000;  /* couleur du fond */
+    height: 70px;       /* hautaur fixe */
+    padding: 0px 40px;  /* espace horizontal */
+    display: flex;          /* aligne logo + bouton sur la même ligne */
+    align-items: center;    /* centre verticalement */
+    justify-content: space-between; /*reste collé en haut quand on scroll */
+    position: sticky;
+    top: 0;
+    z-index: 10;            /* reste au dessus du contenu */
+}
+
+.logo{
+    width: 200px;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
 }
