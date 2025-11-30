@@ -46,7 +46,7 @@ a{
 }
 
 
-.média-grid {
+.media-grid {
     display: flex;  /* horizontal */
     gap: 20px;             /* espace entre les bulles */
     flex-wrap: wrap;       /* permet de revenir à la ligne si pas assez de place */
