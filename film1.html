@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- On réutilise les mêmes fichiers CSS -->
+    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)">
+
+    <title>PlateFORME - Le Comte de Monte-Cristo</title>
+</head>
+<body>
+    <!-- 1) LE MÊME BANDEAU QUE SUR LA PAGE D'ACCUEIL -->
+    <header class="site-header">
+        <img src="media/pictures/logo-plateforme.png"
+             alt="logo-plateforme"
+             class="logo">
+        
+        <div class="header-center">
+            <nav class="header-nav">
+                <a href="index.html#films">Films</a>
+                <a href="index.html#musique">Musique</a>
+                <a href="index.html#presse">Presse</a>
+                <a href="index.html#recommandations">Recommandations</a>
+            </nav>
+
+            <input type="text" id="search-input"
+                   placeholder="Recherche un film, une musique...">
+        </div>
+
+        <div class="header-right">
+            <details class="cart-details">
+                <summary>PANIER</summary>
+                <div class="cart-dropdown">
+                    <a href="achats-en-cours.html">Achats en cours</a>
+                    <a href="achats-realises.html">Achats réalisés</a>
+                </div>
+            </details>
+
+            <button class="btn-login">Connexion</button>
+        </div>
+    </header>
+
+    <!-- 2) CONTENU DÉTAILLÉ DU FILM -->
+    <main class="film-detail">
+        <section class="film-main">
+            <div class="film-poster">
+                <img src="media/pictures/film1.jpg"
+                     alt="Le Comte de Monte-Cristo">
+            </div>
+
+            <div class="film-info">
+                <h1>Le Comte de Monte-Cristo</h1>
+
+                <p class="film-rating">Note : <strong>3,8 / 5</strong></p>
+                <p class="film-price">Prix : <strong>4,99 €</strong></p>
+
+                <p class="film-actors">
+                    <strong>Acteurs :</strong> Pierre Niney, Anaïs Demoustier, Laurent Lafitte...
+                </p>
+
+                <h2>Synopsis</h2>
+                <p class="film-synopsis-full">
+                    Victime d’un complot, le jeune Edmond Dantès est arrêté le jour de son mariage
+                    pour un crime qu’il n’a pas commis. Emprisonné pendant quatorze ans au château d’If,
+                    il parvient à s’évader et découvre l’existence d’un fabuleux trésor. De retour sous
+                    l’identité du mystérieux Comte de Monte-Cristo, il va organiser sa vengeance...
+                </p>
+
+                <!-- Bouton d'achat -->
+                <p>
+                    <a href="Commande.html" class="film-buy-button">Acheter ce film</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- 3) COMMENTAIRES UTILISATEURS -->
+        <section class="film-comments">
+            <h2>Laissez un commentaire</h2>
+
+            <form action="#" method="post">
+                <label for="note">Votre note (sur 5) :</label>
+                <input type="number" id="note" name="note" min="0" max="5" step="0.1">
+
+                <label for="commentaire">Votre avis :</label>
+                <textarea id="commentaire" name="commentaire" rows="4"
+                          placeholder="Ce film m'a plu car..."></textarea>
+
+                <button type="submit">Envoyer le commentaire</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
