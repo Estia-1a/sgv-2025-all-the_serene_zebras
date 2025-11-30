@@ -31,6 +31,36 @@ main, h1, p {
     height: auto;
 }
 
+.media-types {
+    padding: 40px;
+}
+
+.media-types h2 {
+    margin-bottom: 20px;
+}
+
+.media-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.media-card {
+    text-decoration: none;   /* enlève le soulignement du lien */
+}
+
+.media-thumb {
+    width: 150px;
+    height: 150px;
+    background-color: #222;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
 body {
     margin: 0;
     font-family: arial, sans-serif;
