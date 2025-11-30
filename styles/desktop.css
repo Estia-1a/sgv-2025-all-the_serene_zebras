@@ -87,7 +87,7 @@ main, h1, p {
     top: 110%;
     background-color: #fff;
     border-radius: 4px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    box-shadow: 0 2px 6px rgb(221, 221, 229);
     padding: 8px 0;
     min-width: 180px;
     display: none;   /* caché par défaut */
@@ -97,7 +97,7 @@ main, h1, p {
 .cart-dropdown a {
     display: block;
     padding: 6px 12px;
-    color: #000;
+    color: rgb(221, 221, 229);
     text-decoration: none;
     font-size: 14px;
 }
@@ -139,7 +139,7 @@ main, h1, p {
 .cart-dropdown a {
     display: block;
     padding: 6px 12px;
-    color: #000;
+    color: rgb(221, 221, 229);
     text-decoration: none;
 }
 
@@ -171,6 +171,7 @@ a{
 
 .media-types h2 {
     margin-bottom: 20px;
+    color: rgb(221, 221, 229);
 }
 
 
@@ -189,7 +190,7 @@ a{
 .media-thumb {
     width: 150px;
     height: 150px;
-    background-color: #222;
+    background-color: #4b4a4a;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -201,4 +202,5 @@ a{
 body {
     margin: 0;
     font-family: arial, sans-serif;
+    background-color: #000;   /* fond de de page d'accueil */
 }
