@@ -16,7 +16,31 @@
             alt="logo-plateforme" 
             class="logo">
         
-        <button id="top-right">MENU</button>
+        <div class="header-center">
+            <nav class="header-nav">
+                <a href="#films">Films</a>
+                <a href="#musique">Musique</a>
+                <a href="#presse">Presse</a>
+            </nav>
+
+            <input type="text" id="search-input"
+                    placeholder="Recherche un film, une musique...">
+        </div>
+
+        <div class="header-right">
+             <!-- PANIER en <details> -->
+        <details class="cart-details">
+            <summary>PANIER</summary>
+            <div class="cart-dropdown">
+                <a href="achats-en-cours.html">Achats en cours</a>
+                <a href="achats-realises.html">Achats réalisés</a>
+            </div>
+        </details>
+
+
+            <button id="menu-button">MENU</button>
+        </div>
+
     </header>
 
     <main>

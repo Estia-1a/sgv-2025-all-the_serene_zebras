@@ -14,16 +14,144 @@ main, h1, p {
     padding-left: 20px;
 }
 
-.site-header {
+.site-header {           /* Layout général */
     background-color: #000;  /* couleur du fond */
     height: 70px;       /* hautaur fixe */
-    padding: 0px 40px;  /* espace horizontal */
-    display: flex;          /* aligne logo + bouton sur la même ligne */
+    padding: 0px 30px;  /* espace horizontal */
+    display: grid;          /* aligne logo + bouton sur la même ligne */
+    grid-template-columns: auto 1fr auto;    /*logo / centre / droite */
     align-items: center;    /* centre verticalement */
     justify-content: space-between; /*reste collé en haut quand on scroll */
     position: sticky;
     top: 0;
     z-index: 10;            /* reste au dessus du contenu */
+}
+
+.header-center {     /* CENTRE : nav + barre de recherche */
+    display: flex;
+    flex-direction: column; /*nav au-dessus, recherche en dessous*/
+    justify-content: center;   /* centre l'ensemble nav + recherche */
+    align-items: center;
+    gap: 6px;
+}
+
+.header-nav a {
+    margin: 0 10px;
+    color: #76B442;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.header-nav a:hover {
+    text-decoration: underline;
+}
+
+.header-right {        /* Zone droite : panier + menu */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#menu-button {                  /* DROITE : panier + menu */
+     padding: 8px 16px;
+    background-color: #76B442;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cart-details {         /* Bloc PANIER en <details> */
+    position: relative;
+}
+
+
+.cart-details summary {         /* Le "bouton" PANIER = summary */
+    list-style: none;               /* enlève la flèche par défaut */
+    padding: 8px 16px;
+    background-color: #76B442;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    display: inline-block;
+}
+
+
+.cart-dropdown {            /* Le menu déroulant */
+    position: absolute;
+    right: 0;
+    top: 110%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    padding: 8px 0;
+    min-width: 180px;
+    display: none;   /* caché par défaut */
+    z-index: 20;
+}
+
+.cart-dropdown a {
+    display: block;
+    padding: 6px 12px;
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.cart-dropdown a:hover {
+    background-color: #eee;
+}
+
+#cart-button {
+    padding: 8px 16px;
+    background-color: #76B442;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cart-container {     /* Menu déroulant du panier */
+    position: relative;
+}
+
+.cart-dropdown {
+    position: absolute;
+    right: 0;
+    top: 110%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+    padding: 8px 0;
+    min-width: 180px;
+    display: none;
+}
+
+.cart-dropdown.show {
+    display: block;
+}
+
+.cart-dropdown a {
+    display: block;
+    padding: 6px 12px;
+    color: #000;
+    text-decoration: none;
+}
+
+.cart-dropdown a:hover {
+    background-color: #eee;
+}
+#search-input {
+    width: 350px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px; 
 }
 
 .logo{
