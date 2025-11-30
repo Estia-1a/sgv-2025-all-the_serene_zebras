@@ -35,15 +35,23 @@ main, h1, p {
     padding: 40px;
 }
 
+a{
+    color: rgb(221, 221, 229);
+  font-family: Bookman Old Style ; /*style du texte*/
+  font-size: 100%;                  /* taille du texte*/
+}
+
 .media-types h2 {
     margin-bottom: 20px;
 }
 
-.media-grid {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+
+.média-grid {
+    display: flex;  /* horizontal */
+    gap: 20px;             /* espace entre les bulles */
+    flex-wrap: wrap;       /* permet de revenir à la ligne si pas assez de place */
 }
+
 
 .media-card {
     text-decoration: none;   /* enlève le soulignement du lien */
@@ -57,7 +65,7 @@ main, h1, p {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(221, 221, 229);
     font-weight: bold;
 }
 
