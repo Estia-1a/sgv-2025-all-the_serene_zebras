@@ -5,8 +5,8 @@ main, h1, p {
 
 .site-header {           /* Layout général */
     background-color: #000;  /* couleur du fond */
-    height: 70px;       /* hautaur fixe */
-    padding: 0px 30px;  /* espace horizontal */
+    height: 95px;       /* hautaur fixe */
+    padding: 10px 30px;  /* espace horizontal */
     display: grid;          /* aligne logo + bouton sur la même ligne */
     grid-template-columns: auto 1fr auto;    /*logo / centre / droite */
     align-items: center;    /* centre verticalement */
@@ -70,6 +70,12 @@ main, h1, p {
     display: inline-block;
 }
 
+.cart-icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 6px;
+    vertical-align: middle;      /*va aligner l'icône avec le texte*/
+}
 
 .cart-dropdown {            /* Le menu déroulant */
     position: absolute;
@@ -122,12 +128,12 @@ main, h1, p {
     box-shadow: 0 2px 6px rgba(0,0,0,0.25);
     padding: 8px 0;
     min-width: 180px;
-    display: none;
+    display: none;              /*veut dire que le menu est caché*/
     z-index: 20;
 }
 
 .cart-details[open] .cart-dropdown {   /*pour afficher le choix du menu PANIER*/
-    display: block;
+    display: block;     /*fait apparaître en bloc le choix du menu panier*/
 }
     
 .cart-dropdown a {          /*Veut dire : cible uniquement les liens <a> qui sont dedans, pas ailleurs*/
@@ -268,7 +274,31 @@ body {
 }
 
 
+.reclamation-text {
+    text-align: center;
+    font-size: 12px;
+    color: #808000;
+    margin-top: 80px;
+    margin-bottom: 30px;
 
+}
+
+.reclamation-link {         /*lien sans soulignement par défaut */
+    color: #808000;          /* de même couleur que le texte */
+    text-decoration: none;   /* pas souligné*/
+}
+
+.reclamation-link:hover {
+    text-decoration: underline;
+}
+
+.construction-logo {
+    position: fixed;
+    left: 150px;
+    bottom: 140px;
+    width: 150px; /*taille du logo*/
+   opacity: 0.8;
+}
 
 
 /* --------- PAGE DÉTAIL FILM --------- */

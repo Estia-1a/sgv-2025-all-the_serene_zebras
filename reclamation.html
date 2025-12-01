@@ -1,0 +1,60 @@
+reclamation.html
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)">
+    <title>PlateFORME - Accueil</title>
+</head>
+
+<main>
+<img src="media/pictures/temps.svg" 
+      alt="Page en construction"
+      class="construction-logo">
+</main>
+
+<body>
+    <header class="site-header">
+        <img src="media\pictures\logo-plateforme.png"
+            alt="logo-plateforme" 
+            class="logo">
+        
+        <div class="header-center">
+            <nav class="header-nav">
+                <a href="#films">Films</a>
+                <a href="#musique">Musique</a>
+                <a href="#presse">Presse</a>
+                <a href="recommandations">Recommandations</a>
+            </nav>
+
+            <input type="text" id="search-input"
+                    placeholder="Recherche un film, une musique...">
+        </div>
+
+        <div class="header-right">
+             <!-- PANIER en <details> -->
+        <details class="cart-details">
+            <summary>
+                <img src="media/pictures/panier.svg" class="cart-icon">
+                PANIER
+            </summary>   
+            <div class="cart-dropdown">
+                <a href="achats-en-cours.html">Achats en cours</a>
+                <a href="achats-realises.html">Achats réalisés</a>
+            </div>
+        </details>
+
+
+            <button class="btn-login">
+                <img src="media/pictures/cadenas.svg" class="cart-icon">
+                Connexion
+            </button>
+        </div>
+
+    </header>
+
+    
