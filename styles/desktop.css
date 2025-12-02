@@ -3,15 +3,15 @@ main, h1, p {
     padding-left: 20px;
 }
 
-.site-header {           /* Layout général */
+.site-header {           /* Layout du headeer */
     background-color: #000;  /* couleur du fond */
     height: 95px;       /* hautaur fixe */
     padding: 10px 30px;  /* espace horizontal */
     display: grid;          /* aligne logo + bouton sur la même ligne */
     grid-template-columns: auto 1fr auto;    /*logo / centre / droite */
     align-items: center;    /* centre verticalement */
-    justify-content: space-between; /*reste collé en haut quand on scroll */
-    position: sticky;
+    justify-content: space-between; 
+    position: sticky;       /*reste collé en haut quand on scroll */
     top: 0;
     z-index: 10;            /* reste au dessus du contenu */
 }
@@ -24,7 +24,7 @@ main, h1, p {
     gap: 6px;
 }
 
-.header-nav a {
+.header-nav a {             /*pour la navigation*/
     margin: 0 10px;
     color: #76B442;
     text-decoration: none;
@@ -33,7 +33,7 @@ main, h1, p {
 }
 
 .header-nav a:hover {
-    text-decoration: underline;
+    text-decoration: underline;   /*souligne qd je passe la souris dessus*/
 }
 
 .header-right {        /* Zone droite : panier + connexion */
@@ -42,8 +42,8 @@ main, h1, p {
     gap: 10px;
 }
 
-.btn-login {                  /* DROITE : panier + connexion */
-    padding: 8px 18px;
+.btn-login {                  /* DROITE :  connexion */
+    padding: 8px 18px;  /*longueur largeur*/
     background-color: #3B82F6;
     color: white;
     border: none;
@@ -60,7 +60,7 @@ main, h1, p {
 
 .cart-details summary {         /* Le "bouton" PANIER = summary */
     list-style: none;               /* enlève la flèche par défaut */
-    padding: 8px 16px;
+    padding: 8px 18px;
     background-color: #76B442;
     color: white;
     border-radius: 5px;
