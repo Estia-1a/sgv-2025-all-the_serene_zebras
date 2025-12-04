@@ -297,7 +297,7 @@ a{
 
 .media-overlay {           /* Overlay (synopsis) */
     position: absolute;
-    inset: 0;           /* top:0; right:0; bottom:0; left:0 */
+    inset: 0;           
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     opacity: 0;
@@ -305,37 +305,37 @@ a{
     padding: 8px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;   /* on place le texte en haut */
+    justify-content: flex-start;   
     text-align: left;
 }
 
-.media-thumb:hover .media-overlay {     /* Visible seulement au survol */
+.media-thumb:hover .media-overlay {     
     opacity: 1;
 }
 
-.media-title {      /* Titre dans l'overlay */
+.media-title {      
     margin: 0 ;
     font-size: 12px;
     font-weight: bold;
-    line-height: 1.1;    /* hauteur plus compacte */
+    line-height: 1.1;    
 }
 
-.media-synopsis {       /* Texte du synopsis */
+.media-synopsis {       
     margin: 0;
     font-size: 10px;
     line-height: 1.2;
-    max-height: 95px;       /* pour empêcher le textre trop long de déborder */
+    max-height: 95px;       
     overflow: hidden;
 }
 
-.media-thumb:hover .media-overlay {     /* Affichage du synopsis au survol */
+.media-thumb:hover .media-overlay {     
     opacity: 1;
 }
 
 body {
     margin: 0;
     font-family: arial, sans-serif;
-    background-color: #000;   /* fond de de page d'accueil */
+    background-color: #000;   
 }
 
 
@@ -348,9 +348,9 @@ body {
 
 }
 
-.reclamation-link {         /*lien sans soulignement par défaut */
-    color: #808000;          /* de même couleur que le texte */
-    text-decoration: none;   /* pas souligné*/
+.reclamation-link {         
+    color: #808000;          
+    text-decoration: none;   
 }
 
 .reclamation-link:hover {
@@ -403,7 +403,6 @@ body {
     line-height: 1.5;
 }
 
-/* Bouton d'achat */
 .film-buy-button {
     display: inline-block;
     margin-top: 10px;
@@ -415,7 +414,6 @@ body {
     font-weight: bold;
 }
 
-/* Bloc commentaires */
 .film-comments h2 {
     margin-bottom: 10px;
 }
