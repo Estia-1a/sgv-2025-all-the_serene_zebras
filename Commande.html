@@ -1,3 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)">
+    <title>PlateFORME - Accueil</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <img src="media\pictures\logo-plateforme.png"
+            alt="logo-plateforme" 
+            class="logo">
+        
+        <div class="header-center">
+            <nav class="header-nav">
+                <a href="#films">Films</a>
+                <a href="#musique">Musique</a>
+                <a href="#presse">Presse</a>
+                <a href="recommandations">Recommandations</a>
+            </nav>
+
+            <input type="text" id="search-input"
+                    placeholder="Recherche un film, une musique...">
+        </div>
+
+        <div class="header-right">
+             <!-- PANIER en <details> -->
+        <details class="cart-details">    <!--détails du panier-->
+            <summary>
+                <img src="media/pictures/panier.svg" class="cart-icon">     <!--icone du panier-->
+                PANIER
+            </summary>   
+            <div class="cart-dropdown">         <!--menu qui déroule du panier-->
+                <a href="achats-en-cours.html">Achats en cours</a>
+                <a href="achats-realises.html">Achats réalisés</a>
+            </div>
+        </details>
+
+
+            <button class="btn-login">
+                <img src="media/pictures/cadenas.svg" class="cart-icon">
+                Connexion
+            </button>
+        </div>
+
+    </header>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -13,12 +65,11 @@
 <!-- FILM 1 -->
 <div class="film-row">
 <div class="film-img">
-<img src="img/film1.jpg" alt="Film 1">
+<img src="film1.png" alt="Film 1">
 </div>
  
     <div class="film-info">
-<h2>Titre du Film 1</h2>
-<p>Commande de film random #1</p>
+<h2>Le Compte de Monte-Cristo</h2>
 </div>
  
     <div class="film-quality">
@@ -39,21 +90,28 @@
 
 <!-- FILM 2 -->
 <div class="film-row">
-    <div class="film-info">
-        <h2>Titre du Film 2</h2>
-    </div>
-    <select class="qualite">
-        <option>HD</option>
-        <option>FHD</option>
-        <option>4K</option>
-    </select>
-    <div class="film-prix">
-        <p>3,99€</p>
-    </div>
     <div class="film-img">
-        <img src="img/film2.jpg" alt="Film 2">
+        <img src="film2.jpg" alt="Film 2">
+    </div>
+
+    <div class="film-info">
+        <h2>UN P'TIT TRUC EN PLUS</h2>
+    </div>
+
+    <div class="film-quality">
+        <label>Qualité</label>
+        <select class="qualite">
+            <option>HD</option>
+            <option>FHD</option>
+            <option>4K</option>
+        </select>
+    </div>
+
+    <div class="film-prix">
+        <p>3,99 €</p>
     </div>
 </div>
+
 
 <!-- TOTAL -->
 <div class="total">
