@@ -122,5 +122,40 @@ h1 {
     font-size: 1.3em;
 
 }
+.valider-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-valider {
+    background-color: #0de509; /* rouge style Netflix */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-valider:hover {
+    background-color: #23b207;
+    transform: scale(1.05);
+}
+/* Bouton poubelle */
+.btn-delete {
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    cursor: pointer;
+    color: rgb(221, 221, 229);
+    transition: 0.2s;
+    margin-left: 15px;
+}
+
+.btn-delete:hover {
+    color: #e50914; /* rouge Netflix au survol */
+    transform: scale(1.2);
+}
 
  
