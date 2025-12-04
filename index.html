@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)">
-    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)">
+    
+    <!-- CSS de la page d'accueil -->
+    <link rel="stylesheet" href="styles/desktop.css">
+    
+    <!-- CSS du modal -->
+    <link rel="stylesheet" href="styles/modal.css">
+    
     <title>PlateFORME - Accueil</title>
 </head>
 
@@ -29,99 +33,78 @@
         </div>
 
         <div class="header-right">
-             <!-- PANIER en <details> -->
-        <details class="cart-details">    <!--détails du panier-->
-            <summary>
-                <img src="media/pictures/panier.svg" class="cart-icon">   
-                <a href ="Commande.html">
-
-                </a>  <!--icone du panier-->
-                PANIER
-            </summary>   
-            <div class="cart-dropdown">         <!--menu qui déroule du panier-->
-                <a href="Commande.html">Achats en cours</a>
-                <a href="achats-realises.html">Achats réalisés</a>
-            </div>
-        </details>
-
+            <details class="cart-details">
+                <summary>
+                    <img src="media/pictures/panier.svg" class="cart-icon">
+                    PANIER
+                </summary>   
+                <div class="cart-dropdown">
+                    <a href="achats-en-cours.html">Achats en cours</a>
+                    <a href="achats-realises.html">Achats réalisés</a>
+                </div>
+            </details>
 
             <button class="btn-login">
                 <img src="media/pictures/cadenas.svg" class="cart-icon">
                 Connexion
             </button>
         </div>
-
     </header>
 
     <main>
         <section class="media-types">
             <h2>Films</h2>
             <div class="media-grid">                        
-                <a href="film1.html" class="media-card">
+                <div class="media-card" onclick="openModal('film1')">
                     <div class="media-thumb">
-        <!-- Note en haut à gauche -->
-        <div class="media-rating">3.8/5</div>
+                        <div class="media-rating">3.8/5</div>
+                        <img src="media/pictures/film1.png"
+                             alt="Le Compte de Monte-Cristo"
+                             class="media-image">
+                        <div class="media-overlay">
+                            <h3 class="media-title">Le Comte de Monte-Cristo</h3>
+                            <p class="media-synopsis">
+                                Victime d'un complot, le jeune Edmond Dantès est arrêté le jour de son mariage pour un crime qu'il n'a pas commis. Après quatorze ans de détention...
+                            </p>
+                        </div>
+                        <div class="media-price">4,99 €</div>
+                    </div>
+                </div>
 
-        <!-- Image du film -->
-        <img src="media/pictures/film1.png"
-             alt="Le Compte de Monte-Cristo"
-             class="media-image">
-
-        <!-- Synopsis et titre au survol -->
-        <div class="media-overlay">
-            <h3 class="media-title">Le Comte de Monte-Cristo</h3>
-            <p class="media-synopsis">
-                Victime d’un complot, le jeune Edmond Dantès est arrêté le jour de son mariage pour un crime qu’il n’a pas commis. Après quatorze ans de détention...
-            </p>
-        </div>
-
-        <!-- Prix en bas à droite -->
-        <div class="media-price">4,99 €</div>
-    </div>
-</a>
-
-                <a href="film2.html" class="media-card">
+                <div class="media-card" onclick="openModal('film2')">
                     <div class="media-thumb">
+                        <div class="media-rating">4.2/5</div>
+                        <img src="media/pictures/film2.jpg"
+                             alt="Un p'tit truc en plus"
+                             class="media-image">
+                        <div class="media-overlay">
+                            <h3 class="media-title">Un p'tit truc en plus</h3>
+                            <p class="media-synopsis">
+                                Pour échapper à la police, un fils et son père en cavale sont contraints de trouver refuge dans une colonie de vacances pour jeunes adultes en situation de handicap...
+                            </p>
+                        </div>
+                        <div class="media-price">3,99 €</div>
+                    </div>
+                </div>
 
-        <!-- Note en haut à gauche -->
-        <div class="media-rating">4.2/5</div>
-
-        <!-- Image du film -->
-        <img src="media/pictures/film2.jpg"
-             alt="Un p'tit truc en plus"
-             class="media-image">
-
-        <!-- Synopsis au survol -->
-        <div class="media-overlay">
-            <h3 class="media-title">Un p'tit truc en plus</h3>
-            <p class="media-synopsis">
-                Pour échapper à la police, un fils et son père en cavale sont contraints de trouver refuge dans une colonie de vacances pour jeunes adultes en situation de handicap...
-            </p>
-        </div>
-
-        <!-- Prix -->
-        <div class="media-price">3,99 €</div>
-
-    </div>
-</a>
-                <a href="film3.html" class="media-card">
+                <div class="media-card" onclick="openModal('film3')">
                     <div class="media-thumb">Film 3</div>
-                </a>
-                <a href="film4.html" class="media-card">
+                </div>
+                <div class="media-card" onclick="openModal('film4')">
                     <div class="media-thumb">Film 4</div>
-                </a>
-                 <a href="film5.html" class="media-card">
+                </div>
+                <div class="media-card" onclick="openModal('film5')">
                     <div class="media-thumb">Film 5</div>
-                </a>
-                <a href="film6.html" class="media-card">
+                </div>
+                <div class="media-card" onclick="openModal('film6')">
                     <div class="media-thumb">Film 6</div>
-                </a>
-                <a href="film7.html" class="media-card">
+                </div>
+                <div class="media-card" onclick="openModal('film7')">
                     <div class="media-thumb">Film 7</div>
-                </a>
-                <a href="film8.html" class="media-card">
+                </div>
+                <div class="media-card" onclick="openModal('film8')">
                     <div class="media-thumb">Film 8</div>
-                </a>
+                </div>
             </div>  
 
             <h2>Musique</h2>
@@ -179,7 +162,6 @@
                     <div class="media-thumb">Presse 8</div>
                 </a>
             </div>
-
         </section>
     </main>
 
@@ -189,6 +171,56 @@
         cliquez ici
         </a>
     </p>
+
+    <!-- MODAL POP-UP -->
+    <div id="filmModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            
+            <div class="modal-header">
+                <img id="modalImage" src="" alt="Film">
+            </div>
+            
+            <div class="modal-body">
+                <h2 class="modal-title" id="modalTitle"></h2>
+                
+                <div class="modal-meta">
+                    <span class="modal-rating" id="modalRating"></span>
+                    <span id="modalYear"></span>
+                    <span id="modalDuration"></span>
+                </div>
+                
+                <p class="modal-synopsis" id="modalSynopsis"></p>
+                
+                <div class="modal-info">
+                    <div class="info-item">
+                        <div class="info-label">Réalisateur</div>
+                        <div class="info-value" id="modalDirector"></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Genre</div>
+                        <div class="info-value" id="modalGenre"></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Acteurs</div>
+                        <div class="info-value" id="modalActors"></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Prix</div>
+                        <div class="info-value" id="modalPrice"></div>
+                    </div>
+                </div>
+                
+                <div class="modal-actions">
+                    <button class="btn-modal-primary">Louer maintenant</button>
+                    <button class="btn-modal-secondary">+ Ma liste</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript du modal -->
+    <script src="scripts/modal.js"></script>
 </body>
 
 </html>
