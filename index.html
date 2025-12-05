@@ -7,6 +7,16 @@
 
     <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="styles/panier.css" media="screen and (max-width: 767px)">
+
+    
+    <!-- CSS de la page d'accueil -->
+    <link rel="stylesheet" href="styles/desktop.css">
+    
+    <!-- CSS du modal -->
+    <link rel="stylesheet" href="styles/modal.css">
+    
+
     <title>PlateFORME - Accueil</title>
 </head>
 
@@ -44,13 +54,11 @@
             </div>
         </details>
 
-
             <button class="btn-login">
                 <img src="media/pictures/cadenas.svg" class="cart-icon">
                 Connexion
             </button>
         </div>
-
     </header>
 
     <main>
@@ -179,7 +187,6 @@
                     <div class="media-thumb">Presse 8</div>
                 </a>
             </div>
-
         </section>
     </main>
 
@@ -189,6 +196,56 @@
         cliquez ici
         </a>
     </p>
+
+    <!-- MODAL POP-UP -->
+    <div id="filmModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            
+            <div class="modal-header">
+                <img id="modalImage" src="" alt="Film">
+            </div>
+            
+            <div class="modal-body">
+                <h2 class="modal-title" id="modalTitle"></h2>
+                
+                <div class="modal-meta">
+                    <span class="modal-rating" id="modalRating"></span>
+                    <span id="modalYear"></span>
+                    <span id="modalDuration"></span>
+                </div>
+                
+                <p class="modal-synopsis" id="modalSynopsis"></p>
+                
+                <div class="modal-info">
+                    <div class="info-item">
+                        <div class="info-label">Réalisateur</div>
+                        <div class="info-value" id="modalDirector"></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Genre</div>
+                        <div class="info-value" id="modalGenre"></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Acteurs</div>
+                        <div class="info-value" id="modalActors"></div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">Prix</div>
+                        <div class="info-value" id="modalPrice"></div>
+                    </div>
+                </div>
+                
+                <div class="modal-actions">
+                    <button class="btn-modal-primary">Louer maintenant</button>
+                    <button class="btn-modal-secondary">+ Ma liste</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript du modal -->
+    <script src="scripts/modal.js"></script>
 </body>
 
 </html>

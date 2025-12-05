@@ -1,6 +1,12 @@
-main, h1, p {
+main {
     margin-top: 20px;
-    padding-left: 20px;
+    padding-left: 0 20px;    /* marge intérieure droite et gauche*/
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;         /*fond noir*/
 }
 
 .site-header {           /* Layout du headeer */
@@ -47,10 +53,10 @@ main, h1, p {
     background-color: #3B82F6;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px;  /*l'anges des arrondis des angles*/
     cursor: pointer;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 14px;   /*taille de la police d'écriture*/
 }
 
 .cart-details {         /* Bloc PANIER en <details> */
@@ -382,3 +388,5 @@ body {
     cursor: pointer;
     font-weight: bold;
 }
+
+
