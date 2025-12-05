@@ -1,0 +1,110 @@
+/* ---- STYLE GLOBAL IDENTIQUE AU PANIER ---- */
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    color: rgb(221, 221, 229);
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+/* ---- BLOC PRINCIPAL POUR ALIGNER COMME LE PANIER ---- */
+.achats-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 40px;
+}
+
+
+/* ---- LIGNE D'ACHAT ---- */
+.achat-row {
+    display: grid;
+    grid-template-columns: 80px 1fr 120px 160px 140px; 
+    /* image | infos | qualité | date | bouton */
+    align-items: center;
+    gap: 20px;
+
+    background-color: #222;
+    border-radius: 10px;
+
+    padding: 15px 20px;
+    margin: 0 40px 20px;
+}
+
+
+/* ---- IMAGE ---- */
+.achat-img img {
+    width: 90px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+
+/* ---- INFORMATIONS TEXTE ---- */
+.achat-info h2 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.achat-info p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+
+/* ---- QUALITÉ ---- */
+.achat-quality {
+    text-align: center;
+}
+
+.qualite-badge {
+    display: inline-block;
+    background-color: #333;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+
+/* ---- DATE D'ACHAT ---- */
+.achat-date {
+    text-align: center;
+    color: #bbb;
+}
+
+
+/* ---- BOUTON REGARDER ---- */
+.btn-watch {
+    background-color: #0de509;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+    text-align: center;
+}
+
+.btn-watch:hover {
+    background-color: #23b207;
+    transform: scale(1.05);
+}
+
+
+/* ---- MESSAGE SI AUCUN ACHAT ---- */
+.no-achats {
+    text-align: center;
+    margin-top: 40px;
+    color: #aaa;
+    font-size: 1.2em;
+}
