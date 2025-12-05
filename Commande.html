@@ -8,15 +8,18 @@
 
     <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)">
     <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="panier.css">
     <title>PlateFORME - Accueil</title>
 </head>
 
 <body>
     <header class="site-header">
-        <img src="media\pictures\logo-plateforme.png"
-            alt="logo-plateforme" 
-            class="logo">
-        
+        <div class="logo">
+    <a href="index.html">
+        <img src="logo-plateforme.png" alt="Logo plateforme" width="200" height="60">
+    </a>
+</div>
+
         <div class="header-center">
             <nav class="header-nav">
                 <a href="#films">Films</a>
@@ -50,15 +53,9 @@
         </div>
 
     </header>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Panier</title>
-    <link rel="stylesheet" href="panier.css">
-</head>
-<body>
+
+<main class="panier.container">
+
 
 <h1>🎬 Mon Panier</h1>
 
@@ -125,9 +122,10 @@
 <div class="total">
     <h3>Total : 8,98€</h3>
 </div>
-
-</body>
-</html>
 <div class="valider-container">
     <button class="btn-valider">Valider le panier</button>
 </div>
+</main> 
+</body>
+</html>
+
