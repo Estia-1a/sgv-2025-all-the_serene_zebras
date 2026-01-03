@@ -105,7 +105,7 @@ function openModal(filmId) {
     
     if (film) {
         // Remplir les informations du modal
-        document.getElementById('modalImage').src = film.image;
+        // document.getElementById('modalImage').src = film.image;
         document.getElementById('modalTitle').textContent = film.title;
         document.getElementById('modalRating').textContent = '⭐ ' + film.rating;
         document.getElementById('modalYear').textContent = film.year;
