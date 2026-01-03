@@ -4,22 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- CSS de la page d'accueil -->
     <link rel="stylesheet" href="styles/desktop.css">
-    
+
     <!-- CSS du modal -->
     <link rel="stylesheet" href="styles/modal.css">
-    
+
     <title>PlateFORME - Accueil</title>
 </head>
 
 <body>
     <header class="site-header">
-        <img src="media\pictures\logo-plateforme.png"
-            alt="logo-plateforme" 
-            class="logo">
-        
+        <div class="logo">
+            <a href="index.html">
+                <img src="media\pictures\logo-plateforme.png" alt="logo-plateforme" class="logo">
+            </a>
+        </div>
+
         <div class="header-center">
             <nav class="header-nav">
                 <a href="#films">Films</a>
@@ -28,27 +30,26 @@
                 <a href="#recommandations">Recommandations</a>
             </nav>
 
-            <input type="text" id="search-input"
-                    placeholder="Recherche un film, une musique...">
+            <input type="text" id="search-input" placeholder="Recherche un film, une musique...">
         </div>
 
         <div class="header-right">
-             <!-- PANIER en <details> -->
-        <details class="cart-details">    <!--détails du panier-->
-            <summary>
-                <img src="media/pictures/panier.svg" class="cart-icon">   
-                <a href ="Commande.html">
+            <!-- PANIER en <details> -->
+            <details class="cart-details"> <!--détails du panier-->
+                <summary>
+                    <img src="media/pictures/panier.svg" class="cart-icon">
+                    <a href="Commande.html">
 
-                </a>  <!--icone du panier-->
-                PANIER
-            </summary>   
-            <div class="cart-dropdown">         <!--menu qui déroule du panier-->
-                <a href="Commande.html">Achats en cours</a>
-                <a href="achats-réalisés.html">Achats réalisés</a>
-</button>
+                    </a> <!--icone du panier-->
+                    PANIER
+                </summary>
+                <div class="cart-dropdown"> <!--menu qui déroule du panier-->
+                    <a href="Commande.html">Achats en cours</a>
+                    <a href="achats-réalisés.html">Achats réalisés</a>
+                    
 
-            </div>
-        </details>
+                </div>
+            </details>
 
             <button class="btn-login">
                 <img src="media/pictures/cadenas.svg" class="cart-icon">
@@ -60,17 +61,16 @@
     <main>
         <section class="media-types">
             <h2>Films</h2>
-            <div class="media-grid">                        
+            <div class="media-grid">
                 <div class="media-card" onclick="openModal('film1')">
                     <div class="media-thumb">
                         <div class="media-rating">3.8/5</div>
-                        <img src="media/pictures/film1.png"
-                             alt="Le Compte de Monte-Cristo"
-                             class="media-image">
+                        <img src="media/pictures/film1.png" alt="Le Compte de Monte-Cristo" class="media-image">
                         <div class="media-overlay">
                             <h3 class="media-title">Le Comte de Monte-Cristo</h3>
                             <p class="media-synopsis">
-                                Victime d'un complot, le jeune Edmond Dantès est arrêté le jour de son mariage pour un crime qu'il n'a pas commis. Après quatorze ans de détention...
+                                Victime d'un complot, le jeune Edmond Dantès est arrêté le jour de son mariage pour un
+                                crime qu'il n'a pas commis. Après quatorze ans de détention...
                             </p>
                         </div>
                         <div class="media-price">4,99 €</div>
@@ -80,13 +80,12 @@
                 <div class="media-card" onclick="openModal('film2')">
                     <div class="media-thumb">
                         <div class="media-rating">4.2/5</div>
-                        <img src="media/pictures/film2.jpg"
-                             alt="Un p'tit truc en plus"
-                             class="media-image">
+                        <img src="media/pictures/film2.jpg" alt="Un p'tit truc en plus" class="media-image">
                         <div class="media-overlay">
                             <h3 class="media-title">Un p'tit truc en plus</h3>
                             <p class="media-synopsis">
-                                Pour échapper à la police, un fils et son père en cavale sont contraints de trouver refuge dans une colonie de vacances pour jeunes adultes en situation de handicap...
+                                Pour échapper à la police, un fils et son père en cavale sont contraints de trouver
+                                refuge dans une colonie de vacances pour jeunes adultes en situation de handicap...
                             </p>
                         </div>
                         <div class="media-price">3,99 €</div>
@@ -111,161 +110,145 @@
                 <div class="media-card" onclick="openModal('film8')">
                     <div class="media-thumb">Film 8</div>
                 </div>
-            </div>  
+            </div>
 
             <h2>Musique</h2>
-            
+
 
             <div class="media-grid">
-                                <div class="media-card" onclick="openModal('musique1')">
+                <div class="media-card" onclick="openModal('musique1')">
                     <div class="media-thumb">
-                        <img src="musique1.jpg"
-                             class="media-image">
+                        <img src="musique1.jpg" class="media-image">
                         <div class="media-overlay">
-                            
+
                         </div>
                     </div>
-                </div>                        
-                                <div class="media-card" onclick="openModal('musique2')">
+                </div>
+                <div class="media-card" onclick="openModal('musique2')">
                     <div class="media-thumb">
-                        <img src="musique2.jpg"
-                             class="media-image">
+                        <img src="musique2.jpg" class="media-image">
                         <div class="media-overlay">
-                            
+
                         </div>
                     </div>
-                </div>   
-                                <div class="media-card" onclick="openModal('musique3')">
+                </div>
+                <div class="media-card" onclick="openModal('musique3')">
                     <div class="media-thumb">
-                        <img src="musique3.jpg"
-                             class="media-image">
+                        <img src="musique3.jpg" class="media-image">
                         <div class="media-overlay">
-                            
+
                         </div>
                     </div>
-                </div>     
-                                <div class="media-card" onclick="openModal('musique4')">
+                </div>
+                <div class="media-card" onclick="openModal('musique4')">
                     <div class="media-thumb">
-                        <img src="musique4.jpg"
-                             class="media-image">
+                        <img src="musique4.jpg" class="media-image">
                         <div class="media-overlay">
-                            
+
                         </div>
                     </div>
-                </div>     
-                                <div class="media-card" onclick="openModal('musique5')">
+                </div>
+                <div class="media-card" onclick="openModal('musique5')">
                     <div class="media-thumb">
-                        <img src="musique5.jpg"
-                             class="media-image">
+                        <img src="musique5.jpg" class="media-image">
                         <div class="media-overlay">
-                            
+
                         </div>
                     </div>
-                </div>     
-                                <div class="media-card" onclick="openModal('musique6')">
+                </div>
+                <div class="media-card" onclick="openModal('musique6')">
                     <div class="media-thumb">
-                        <img src="musique6.jpg"
-                             class="media-image">
+                        <img src="musique6.jpg" class="media-image">
                         <div class="media-overlay">
-                            
+
                         </div>
                     </div>
-                </div>     
-                                <div class="media-card" onclick="openModal('musique7')">
+                </div>
+                <div class="media-card" onclick="openModal('musique7')">
                     <div class="media-thumb">
-                        <img src="musique7.jpg"
-                             class="media-image">
+                        <img src="musique7.jpg" class="media-image">
                         <div class="media-overlay">
-                            
+
                         </div>
                     </div>
-                </div>     
-                                <div class="media-card" onclick="openModal('musique8')">
+                </div>
+                <div class="media-card" onclick="openModal('musique8')">
                     <div class="media-thumb">
-                        <img src="musique8.jpg"
-                             class="media-image">
+                        <img src="musique8.jpg" class="media-image">
                         <div class="media-overlay">
-                            
+
                         </div>
                     </div>
-                </div>     
+                </div>
             </div>
 
             <h2>Presse</h2>
 
             <div class="media-grid">
-                                <div class="media-card" onclick="openModal('presse1')">
+                <div class="media-card" onclick="openModal('presse1')">
                     <div class="media-thumb">
-                        <img src="presse1.png"
-                             class="media-image">
+                        <img src="presse1.png" class="media-image">
                         <div class="media-overlay">
-                            
+
                         </div>
                     </div>
-                </div>                        
-                                <div class="media-card" onclick="openModal('presse2')">
+                </div>
+                <div class="media-card" onclick="openModal('presse2')">
                     <div class="media-thumb">
-                        <img src="presse2.png"
-                             class="media-image">
+                        <img src="presse2.png" class="media-image">
                         <div class="media-overlay">
-                            
+
                         </div>
                     </div>
-                </div>   
-                                <div class="media-card" onclick="openModal('presse3')">
+                </div>
+                <div class="media-card" onclick="openModal('presse3')">
                     <div class="media-thumb">
-                        <img src="presse3.png"
-                             class="media-image">
+                        <img src="presse3.png" class="media-image">
                         <div class="media-overlay">
-                            
+
                         </div>
                     </div>
-                </div>     
-                                <div class="media-card" onclick="openModal('presse4')">
+                </div>
+                <div class="media-card" onclick="openModal('presse4')">
                     <div class="media-thumb">
-                        <img src="presse4.png"
-                             class="media-image">
+                        <img src="presse4.png" class="media-image">
                         <div class="media-overlay">
-                            
+
                         </div>
                     </div>
-                </div>     
-                                <div class="media-card" onclick="openModal('presse5')">
+                </div>
+                <div class="media-card" onclick="openModal('presse5')">
                     <div class="media-thumb">
-                        <img src="presse5.png"
-                             class="media-image">
+                        <img src="presse5.png" class="media-image">
                         <div class="media-overlay">
-                            
+
                         </div>
                     </div>
-                </div>     
-                                <div class="media-card" onclick="openModal('presse6')">
+                </div>
+                <div class="media-card" onclick="openModal('presse6')">
                     <div class="media-thumb">
-                        <img src="presse6.png"
-                             class="media-image">
+                        <img src="presse6.png" class="media-image">
                         <div class="media-overlay">
-                            
+
                         </div>
                     </div>
-                </div>     
-                                <div class="media-card" onclick="openModal('presse7')">
+                </div>
+                <div class="media-card" onclick="openModal('presse7')">
                     <div class="media-thumb">
-                        <img src="presse7.png"
-                             class="media-image">
+                        <img src="presse7.png" class="media-image">
                         <div class="media-overlay">
-                            
+
                         </div>
                     </div>
-                </div>     
-                                <div class="media-card" onclick="openModal('presse8')">
+                </div>
+                <div class="media-card" onclick="openModal('presse8')">
                     <div class="media-thumb">
-                        <img src="presse8.png"
-                             class="media-image">
+                        <img src="presse8.png" class="media-image">
                         <div class="media-overlay">
-                            
+
                         </div>
                     </div>
-                </div>     
+                </div>
             </div>
         </section>
     </main>
@@ -273,7 +256,7 @@
     <p class="reclamation-text">
         Pour toute réclamation,
         <a href="reclamation.html" class="reclamation-link">
-        cliquez ici
+            cliquez ici
         </a>
     </p>
 
@@ -281,22 +264,22 @@
     <div id="filmModal" class="modal">
         <div class="modal-content">
             <button class="close-btn" onclick="closeModal()">&times;</button>
-            
+
             <div class="modal-header">
                 <img id="modalImage" src="" alt="Film">
             </div>
-            
+
             <div class="modal-body">
                 <h2 class="modal-title" id="modalTitle"></h2>
-                
+
                 <div class="modal-meta">
                     <span class="modal-rating" id="modalRating"></span>
                     <span id="modalYear"></span>
                     <span id="modalDuration"></span>
                 </div>
-                
+
                 <p class="modal-synopsis" id="modalSynopsis"></p>
-                
+
                 <div class="modal-info">
                     <div class="info-item">
                         <div class="info-label">Réalisateur</div>
@@ -315,7 +298,7 @@
                         <div class="info-value" id="modalPrice"></div>
                     </div>
                 </div>
-                
+
                 <div class="modal-actions">
                     <button class="btn-modal-primary">Louer maintenant</button>
                     <button class="btn-modal-secondary">+ Ma liste</button>

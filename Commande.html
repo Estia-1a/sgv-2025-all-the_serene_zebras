@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -15,10 +14,10 @@
 <body>
     <header class="site-header">
         <div class="logo">
-    <a href="index.html">
-        <img src="logo-plateforme.png" alt="Logo plateforme" width="200" height="60">
-    </a>
-</div>
+            <a href="index.html">
+                <img src="media\pictures\logo-plateforme.png" alt="logo-plateforme" class="logo">
+            </a>
+        </div>
 
         <div class="header-center">
             <nav class="header-nav">
@@ -28,22 +27,21 @@
                 <a href="#recommandations">Recommandations</a>
             </nav>
 
-            <input type="text" id="search-input"
-                    placeholder="Recherche un film, une musique...">
+            <input type="text" id="search-input" placeholder="Recherche un film, une musique...">
         </div>
 
         <div class="header-right">
-             <!-- PANIER en <details> -->
-        <details class="cart-details">    <!--détails du panier-->
-            <summary>
-                <img src="media/pictures/panier.svg" class="cart-icon">     <!--icone du panier-->
-                PANIER
-            </summary>   
-            <div class="cart-dropdown">         <!--menu qui déroule du panier-->
-                <a href="Commande.html">Achats en cours</a>
-                <a href="achats-réalisés.html">Achats réalisés</a>
-            </div>
-        </details>
+            <!-- PANIER en <details> -->
+            <details class="cart-details"> <!--détails du panier-->
+                <summary>
+                    <img src="media/pictures/panier.svg" class="cart-icon"> <!--icone du panier-->
+                    PANIER
+                </summary>
+                <div class="cart-dropdown"> <!--menu qui déroule du panier-->
+                    <a href="Commande.html">Achats en cours</a>
+                    <a href="achats-réalisés.html">Achats réalisés</a>
+                </div>
+            </details>
 
 
             <button class="btn-login">
@@ -54,78 +52,85 @@
 
     </header>
 
-<main class="panier.container">
+    <main class="panier.container">
 
 
-<h1>🎬 Mon Panier</h1>
+        <h1>🎬 Mon Panier</h1>
 
-<!-- FILM 1 -->
-<div class="film-row">
-<div class="film-img">
-<img src="film1.png" alt="Film 1">
-</div>
- 
-    <div class="film-info">
-<h2>Le Compte de Monte-Cristo</h2>
-</div>
- 
-    <div class="film-quality">
-<label>Qualité</label>
-<select class="qualite">
-<option>HD</option>
-<option>FHD</option>
-<option>4K</option>
-</select>
-</div>
- 
-    <div class="film-prix">
-<p>4,99 €</p>
-<div class="film-delete">
-    <button class="btn-delete">🗑️</button>
-</div>
+        <!-- FILM 1 -->
+        <div class="film-row">
+            <div class="film-colleft">
+                <div class="film-img">
+                    <img src="film1.png" alt="Film 1">
+                </div>
+            </div>
+            <div class="film-colright">
+                <div class="film-info">
+                    <h2>Le Compte de Monte-Cristo</h2>
+                </div>
+                <div class="film-action">
+                    <div class="film-quality">
+                        <label>Qualité</label>
+                        <select class="qualite">
+                            <option>HD</option>
+                            <option>FHD</option>
+                            <option>4K</option>
+                        </select>
+                    </div>
 
-</div>
-</div>
+                    <div class="film-prix">
+                        <p>4,99 €</p>
+                        <div class="film-delete">
+                            <button class="btn-delete">🗑️</button>
+                        </div>
 
- 
-
-<!-- FILM 2 -->
-<div class="film-row">
-    <div class="film-img">
-        <img src="film2.jpg" alt="Film 2">
-    </div>
-
-    <div class="film-info">
-        <h2>UN P'TIT TRUC EN PLUS</h2>
-    </div>
-
-    <div class="film-quality">
-        <label>Qualité</label>
-        <select class="qualite">
-            <option>HD</option>
-            <option>FHD</option>
-            <option>4K</option>
-        </select>
-    </div>
-
-    <div class="film-prix">
-        <p>3,99 €</p>
-        <div class="film-delete">
-    <button class="btn-delete">🗑️</button>
-</div>
-
-    </div>
-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-<!-- TOTAL -->
-<div class="total">
-    <h3>Total : 8,98€</h3>
-</div>
-<div class="valider-container">
-    <button class="btn-valider">Valider le panier</button>
-</div>
-</main> 
+
+        <!-- FILM 2 -->
+        <div class="film-row">
+            <div class="film-colleft">
+                <div class="film-img">
+                    <img src="film2.jpg" alt="Film 2">
+                </div>
+            </div>
+            <div class="film-colright">
+                <div class="film-info">
+                    <h2>UN P'TIT TRUC EN PLUS</h2>
+                </div>
+                <div class="film-action">
+                    <div class="film-quality">
+                        <label>Qualité</label>
+                        <select class="qualite">
+                            <option>HD</option>
+                            <option>FHD</option>
+                            <option>4K</option>
+                        </select>
+                    </div>
+
+                    <div class="film-prix">
+                        <p>3,99 €</p>
+                        <div class="film-delete">
+                            <button class="btn-delete">🗑️</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- TOTAL -->
+        <div class="total">
+            <h3>Total : 8,98€</h3>
+        </div>
+        <div class="valider-container">
+            <button class="btn-valider">Valider le panier</button>
+        </div>
+    </main>
 </body>
-</html>
 
+</html>
