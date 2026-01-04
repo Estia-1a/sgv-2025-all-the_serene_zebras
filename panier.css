@@ -207,7 +207,7 @@ body {
 
 a {
     color: rgb(221, 221, 229);
-    font-family: Bookman Old Style;
+    font-family: "Bookman Old Style";
     /*style du texte*/
     font-size: 100%;
     /* taille du texte*/

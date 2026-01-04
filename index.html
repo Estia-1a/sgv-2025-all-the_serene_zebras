@@ -9,10 +9,13 @@
     <link rel="stylesheet" href="styles/desktop.css">
 
     <!-- CSS du modal -->
-    <link rel="stylesheet" href="styles/modal.css">
+    <!-- <link rel="stylesheet" href="styles/modal.css"> -->
 
     <title>PlateFORME - Accueil</title>
 </head>
+
+
+
 
 <body>
     <header class="site-header">
@@ -38,15 +41,15 @@
             <details class="cart-details"> <!--détails du panier-->
                 <summary>
                     <img src="media/pictures/panier.svg" alt="panier" class="cart-icon">
-                    <a href="Commande.html">
+                    <!-- <a href="Commande.html"> -->
 
-                    </a> <!--icone du panier-->
+                    <!-- </a> icone du panier -->
                     PANIER
                 </summary>
                 <div class="cart-dropdown"> <!--menu qui déroule du panier-->
                     <a href="Commande.html">Achats en cours</a>
-                    <a href="achats-réalisés.html">Achats réalisés</a>
-                    
+                    <!-- <a href="achats-realises.html">Achats réalisés</a> -->
+
 
                 </div>
             </details>
@@ -60,9 +63,9 @@
 
     <main>
         <section class="media-types">
-            <h2>Films</h2>
+            <h2 id="films">Films</h2>
             <div class="media-grid">
-                <div class="media-card" onclick="openModal('film1')">
+                <div class="media-card">  <!--onclick="openModal('film1')"-->
                     <div class="media-thumb">
                         <div class="media-rating">3.8/5</div>
                         <img src="media/pictures/film1.png" alt="Le Compte de Monte-Cristo" class="media-image">
@@ -77,7 +80,7 @@
                     </div>
                 </div>
 
-                <div class="media-card" onclick="openModal('film2')">
+                <div class="media-card"> <!--onclick="openModal('film2')"-->
                     <div class="media-thumb">
                         <div class="media-rating">4.2/5</div>
                         <img src="media/pictures/film2.jpg" alt="Un p'tit truc en plus" class="media-image">
@@ -92,31 +95,31 @@
                     </div>
                 </div>
 
-                <div class="media-card" onclick="openModal('film3')">
+                <div class="media-card"> <!--onclick="openModal('film3')"-->
                     <div class="media-thumb">Film 3</div>
                 </div>
-                <div class="media-card" onclick="openModal('film4')">
+                <div class="media-card"> <!-- onclick="openModal('film4')"-->
                     <div class="media-thumb">Film 4</div>
                 </div>
-                <div class="media-card" onclick="openModal('film5')">
+                <div class="media-card">  <!-- onclick="openModal('film5')"-->
                     <div class="media-thumb">Film 5</div>
                 </div>
-                <div class="media-card" onclick="openModal('film6')">
+                <div class="media-card">   <!-- onclick="openModal('film6')"-->
                     <div class="media-thumb">Film 6</div>
                 </div>
-                <div class="media-card" onclick="openModal('film7')">
+                <div class="media-card">  <!-- onclick="openModal('film7')"-->
                     <div class="media-thumb">Film 7</div>
                 </div>
-                <div class="media-card" onclick="openModal('film8')">
+                <div class="media-card">  <!-- onclick="openModal('film8')"-->
                     <div class="media-thumb">Film 8</div>
                 </div>
             </div>
 
-            <h2>Musique</h2>
+            <h2 id="musique">Musique</h2>
 
 
             <div class="media-grid">
-                <div class="media-card" onclick="openModal('musique1')">
+                <div class="media-card">  <!-- onclick="openModal('musique1')"-->
                     <div class="media-thumb">
                         <img src="musique1.jpg" alt="musique1.jpg" class="media-image">
                         <div class="media-overlay">
@@ -124,7 +127,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="media-card" onclick="openModal('musique2')">
+                <div class="media-card">  <!-- onclick="openModal('musique2')"-->
                     <div class="media-thumb">
                         <img src="musique2.jpg" alt="musique2.jpg" class="media-image">
                         <div class="media-overlay">
@@ -132,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="media-card" onclick="openModal('musique3')">
+                <div class="media-card">   <!-- onclick="openModal('musique3')"-->
                     <div class="media-thumb">
                         <img src="musique3.jpg" alt="musique3.jpg" class="media-image">
                         <div class="media-overlay">
@@ -140,7 +143,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="media-card" onclick="openModal('musique4')">
+                <div class="media-card">   <!-- onclick="openModal('musique4')"-->
                     <div class="media-thumb">
                         <img src="musique4.jpg" alt="musique4.jpg" class="media-image">
                         <div class="media-overlay">
@@ -148,7 +151,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="media-card" onclick="openModal('musique5')">
+                <div class="media-card">  <!-- onclick="openModal('musique5')"-->
                     <div class="media-thumb">
                         <img src="musique5.jpg" alt="musique5.jpg" class="media-image">
                         <div class="media-overlay">
@@ -156,7 +159,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="media-card" onclick="openModal('musique6')">
+                <div class="media-card">  <!-- onclick="openModal('musique6')"-->
                     <div class="media-thumb">
                         <img src="musique6.jpg" alt="musique6.jpg" class="media-image">
                         <div class="media-overlay">
@@ -164,7 +167,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="media-card" onclick="openModal('musique7')">
+                <div class="media-card">   <!-- onclick="openModal('musique7')"-->
                     <div class="media-thumb">
                         <img src="musique7.jpg" alt="musique7.jpg" class="media-image">
                         <div class="media-overlay">
@@ -172,7 +175,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="media-card" onclick="openModal('musique8')">
+                <div class="media-card">  <!-- onclick="openModal('musique8')"-->
                     <div class="media-thumb">
                         <img src="musique8.jpg" alt="musique8.jpg" class="media-image">
                         <div class="media-overlay">
@@ -182,10 +185,10 @@
                 </div>
             </div>
 
-            <h2>Presse</h2>
+            <h2 id="presse">Presse</h2>
 
             <div class="media-grid">
-                <div class="media-card" onclick="openModal('presse1')">
+                <div class="media-card">  <!-- onclick="openModal('presse1')"-->
                     <div class="media-thumb">
                         <img src="presse1.png" alt="presse1" class="media-image">
                         <div class="media-overlay">
@@ -193,7 +196,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="media-card" onclick="openModal('presse2')">
+                <div class="media-card">   <!-- onclick="openModal('presse2')"-->
                     <div class="media-thumb">
                         <img src="presse2.png" alt="presse2" class="media-image">
                         <div class="media-overlay">
@@ -201,7 +204,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="media-card" onclick="openModal('presse3')">
+                <div class="media-card">  <!-- onclick="openModal('presse3')"-->
                     <div class="media-thumb">
                         <img src="presse3.png" alt="presse3" class="media-image">
                         <div class="media-overlay">
@@ -209,7 +212,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="media-card" onclick="openModal('presse4')">
+                <div class="media-card">  <!-- onclick="openModal('presse4')"-->
                     <div class="media-thumb">
                         <img src="presse4.png" alt="presse4" class="media-image">
                         <div class="media-overlay">
@@ -217,7 +220,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="media-card" onclick="openModal('presse5')">
+                <div class="media-card">  <!-- onclick="openModal('presse5')"-->
                     <div class="media-thumb">
                         <img src="presse5.png" alt="presse5" class="media-image">
                         <div class="media-overlay">
@@ -225,7 +228,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="media-card" onclick="openModal('presse6')">
+                <div class="media-card">  <!-- onclick="openModal('presse6')"-->
                     <div class="media-thumb">
                         <img src="presse6.png" alt="presse6" class="media-image">
                         <div class="media-overlay">
@@ -233,7 +236,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="media-card" onclick="openModal('presse7')">
+                <div class="media-card">  <!-- onclick="openModal('presse7')"-->
                     <div class="media-thumb">
                         <img src="presse7.png" alt="presse7" class="media-image">
                         <div class="media-overlay">
@@ -241,7 +244,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="media-card" onclick="openModal('presse8')">
+                <div class="media-card">  <!-- onclick="openModal('presse8')"-->
                     <div class="media-thumb">
                         <img src="presse8.png" alt="presse8" class="media-image">
                         <div class="media-overlay">
@@ -251,64 +254,19 @@
                 </div>
             </div>
         </section>
+
+        <h2 id="recommandations">Recommandations</h2>
+<p>À venir…</p>
     </main>
 
-    <p class="reclamation-text">
-        Pour toute réclamation,
-        <a href="#" class="reclamation-link">
-            cliquez ici
-        </a>
-    </p>
+    
 
-    <!-- MODAL POP-UP -->
-    <div id="filmModal" class="modal">
-        <div class="modal-content">
-            <button class="close-btn" onclick="closeModal()">&times;</button>
+   
 
-            <div class="modal-header">
-                <!-- <img id="modalImage" src="" alt="Film"> -->
-            </div>
-
-            <div class="modal-body">
-                <!-- <h2 class="modal-title" id="modalTitle"></h2> -->
-
-                <div class="modal-meta">
-                    <span class="modal-rating" id="modalRating"></span>
-                    <span id="modalYear"></span>
-                    <span id="modalDuration"></span>
-                </div>
-
-                <p class="modal-synopsis" id="modalSynopsis"></p>
-
-                <div class="modal-info">
-                    <div class="info-item">
-                        <div class="info-label">Réalisateur</div>
-                        <div class="info-value" id="modalDirector"></div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-label">Genre</div>
-                        <div class="info-value" id="modalGenre"></div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-label">Acteurs</div>
-                        <div class="info-value" id="modalActors"></div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-label">Prix</div>
-                        <div class="info-value" id="modalPrice"></div>
-                    </div>
-                </div>
-
-                <div class="modal-actions">
-                    <button class="btn-modal-primary">Louer maintenant</button>
-                    <button class="btn-modal-secondary">+ Ma liste</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- JavaScript du modal -->
-    <script src="scripts/modal.js"></script>
+   
+    <footer>
+        <a href="Commande.html">Aller à la commande</a>
+    </footer>
 </body>
 
 </html>

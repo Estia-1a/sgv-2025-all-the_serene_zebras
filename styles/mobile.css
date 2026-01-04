@@ -1,5 +1,7 @@
 #top-right {
-    position: 8px 14px;  
+    position: absolute; 
+    top: 8px;
+    right: 14px; 
 }
 
 
